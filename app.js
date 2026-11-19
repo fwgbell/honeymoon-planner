@@ -1434,6 +1434,8 @@
     if ('serviceWorker' in navigator && location.protocol === 'https:') {
       navigator.serviceWorker.register('sw.js').catch(() => {});
     }
+    // Ask the browser not to evict our storage (saved token + offline copy) when the device is low on space.
+    if (navigator.storage && navigator.storage.persist) navigator.storage.persist().catch(() => {});
     document.addEventListener('click', onClick);
     document.addEventListener('submit', onSubmit);
     document.addEventListener('change', onChange);
