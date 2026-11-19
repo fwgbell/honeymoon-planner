@@ -1022,6 +1022,7 @@
     $('#sheetTitle').textContent = title;
     $('#sheetBody').innerHTML = html;
     const s = $('#sheet');
+    s.classList.remove('sheet-wide');
     ui.sheetDay = null;
     if (!s.open) s.showModal();
     $('#sheetTitle').focus({ preventScroll: true });
@@ -1147,6 +1148,7 @@
   function openDay(date) {
     openSheet(fLong(date), `${dayBody(date, true)}
       <div class="form-actions" style="margin-top:22px"><button class="btn btn-sm" data-act="goto-day" data-date="${date}">Open on the Home screen</button></div>`);
+    $('#sheet').classList.add('sheet-wide'); // the day view has two columns; give them room on desktop
     ui.sheetDay = date;
   }
 
@@ -1442,6 +1444,9 @@
     document.addEventListener('input', onInput);
     document.addEventListener('keydown', (e) => {
       if ((e.key === 'Enter' || e.key === ' ') && e.target.matches('.aday')) { e.preventDefault(); openDay(e.target.dataset.date); }
+      // In sheet forms, Enter in a field shouldn't submit and close the sheet; only the Save button does.
+      // (Textareas still get new lines; buttons still activate with Enter.)
+      if (e.key === 'Enter' && e.target.matches('input, select') && e.target.closest('#sheet form')) e.preventDefault();
     });
     $('#view').addEventListener('focusout', (e) => {
       if (e.target.dataset && e.target.dataset.note) { const d = e.target.dataset.note; clearTimeout(noteTimers[d]); saveNote(d, e.target.value); }
@@ -1454,7 +1459,14 @@
     window.addEventListener('offline', setSync);
     window.addEventListener('beforeunload', (e) => { if (dirty && D) { flush(); e.preventDefault(); e.returnValue = ''; } });
     $('#sheet').addEventListener('close', () => { ui.sheetDay = null; if (safeRender.pending) { safeRender.pending = false; render(); } });
-    $('#sheet').addEventListener('click', (e) => { if (e.target === $('#sheet')) closeSheet(); });
+    // Only dismiss on a genuine backdrop click: the press must start AND end on the dialog itself.
+    // Otherwise a text-selection drag that ends outside the sheet would close it.
+    let downOnBackdrop = false;
+    $('#sheet').addEventListener('pointerdown', (e) => { downOnBackdrop = e.target === $('#sheet'); });
+    $('#sheet').addEventListener('click', (e) => {
+      if (downOnBackdrop && e.target === $('#sheet')) closeSheet();
+      downOnBackdrop = false;
+    });
     $('#btnSettings').addEventListener('click', openSettings);
     $('#btnLock').addEventListener('click', lockApp);
 
