@@ -1,0 +1,10 @@
+private/
+*.local.json
+.DS_Store
+Thumbs.db
+.claude/
+# Impeccable design-skill scratch: build screenshots, decision mocks, question state, hook cache
+.impeccable/review/
+.impeccable/questions/
+.impeccable/mocks/
+.impeccable/hook.cache.json

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Honeymoon">
+<title>Honeymoon</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Cover / unlock gate -->
+<section id="gate" class="cover">
+  <div class="cover-inner">
+    <h1 class="cover-title">The Honeymoon</h1>
+    <p class="cover-sub">A private plan for two</p>
+    <hr class="cover-rule">
+
+    <form id="unlockForm" class="gate-form" hidden autocomplete="on">
+      <input type="text" name="username" value="honeymoon" autocomplete="username" hidden>
+      <label class="gate-label" for="pass">Passphrase</label>
+      <input id="pass" name="password" type="password" autocomplete="current-password" required>
+      <button type="submit" class="btn btn-fill">Open the plan</button>
+      <p id="gateMsg" class="gate-msg" role="status"></p>
+    </form>
+
+    <form id="setupForm" class="gate-form" hidden>
+      <p class="gate-note">First-time setup. Choose a long passphrase you will both remember. It is the only thing protecting the plan, and it can't be recovered.</p>
+      <label class="gate-label" for="sPass">Passphrase (4+ words or 16+ characters)</label>
+      <input id="sPass" type="password" autocomplete="new-password" required>
+      <label class="gate-label" for="sPass2">Repeat passphrase</label>
+      <input id="sPass2" type="password" autocomplete="new-password" required>
+      <label class="gate-label" for="sSeed">Trip data file (seed.json)</label>
+      <input id="sSeed" type="file" accept=".json,application/json" required>
+      <div id="sRepoWrap" class="gate-sub">
+        <label class="gate-label" for="sRepo">GitHub repository (owner/name)</label>
+        <input id="sRepo" type="text" placeholder="yourname/honeymoon" autocapitalize="off" spellcheck="false">
+        <label class="gate-label" for="sToken">GitHub token (optional)</label>
+        <input id="sToken" type="password" autocomplete="off" spellcheck="false" aria-describedby="sTokenHint">
+        <p id="sTokenHint" class="gate-hint">Without a token you'll download the encrypted file and upload it to the repository yourself.</p>
+      </div>
+      <button type="submit" class="btn btn-fill">Encrypt and create</button>
+      <p id="setupMsg" class="gate-msg" role="status"></p>
+    </form>
+
+    <p id="gateLoading" class="gate-msg">Loading…</p>
+  </div>
+
+  <div class="cover-route" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+</section>
+
+<!-- App -->
+<div id="app" hidden>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="tb-side">
+        <button id="syncChip" class="sync" type="button" data-act="sync-info"><span class="sync-dot"></span><span class="sync-label">…</span></button>
+      </div>
+      <a class="wordmark" href="#today">The Honeymoon</a>
+      <div class="tb-side tb-right">
+        <button id="btnSettings" class="icon-btn" aria-label="Settings" title="Settings">
+          <svg viewBox="0 0 24 24" width="20" height="20"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>
+        </button>
+        <button id="btnLock" class="icon-btn" aria-label="Lock the plan" title="Lock">
+          <svg viewBox="0 0 24 24" width="20" height="20"><rect x="4" y="11" width="16" height="10" rx="1"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+        </button>
+      </div>
+    </div>
+    <nav class="mainnav" aria-label="Sections">
+      <a href="#today" data-tab="today">Home</a>
+      <a href="#itinerary" data-tab="itinerary">Itinerary</a>
+      <a href="#stays" data-tab="stays">Stays</a>
+      <a href="#activities" data-tab="activities">Activities</a>
+      <a href="#budget" data-tab="budget">Budget</a>
+    </nav>
+  </header>
+
+  <main id="view" tabindex="-1"></main>
+
+  <nav class="tabbar" aria-label="Sections">
+    <a href="#today" data-tab="today"><svg viewBox="0 0 24 24"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5.5h4V20"/></svg><span>Home</span></a>
+    <a href="#itinerary" data-tab="itinerary"><svg viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="1"/><path d="M3.5 10h17M8 3v4M16 3v4M7.5 14h3M7.5 17h6"/></svg><span>Itinerary</span></a>
+    <a href="#stays" data-tab="stays"><svg viewBox="0 0 24 24"><path d="M3 19V7M3 13h18v6M21 13v-2a3 3 0 0 0-3-3h-7v5"/><circle cx="7" cy="10.5" r="1.8"/></svg><span>Stays</span></a>
+    <a href="#activities" data-tab="activities"><svg viewBox="0 0 24 24"><path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"/></svg><span>Activities</span></a>
+    <a href="#budget" data-tab="budget"><svg viewBox="0 0 24 24"><path d="M16.5 6.5A4.5 4.5 0 0 0 8.5 9v10.5H17M6.5 14h8"/></svg><span>Budget</span></a>
+  </nav>
+</div>
+
+<dialog id="sheet" class="sheet" aria-labelledby="sheetTitle">
+  <div class="sheet-inner">
+    <div class="sheet-head">
+      <h2 id="sheetTitle" tabindex="-1"></h2>
+      <button type="button" class="icon-btn sheet-close" aria-label="Close" data-close>
+        <svg viewBox="0 0 24 24" width="22" height="22"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </div>
+    <div id="sheetBody" class="sheet-body"></div>
+  </div>
+</dialog>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<script src="store.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

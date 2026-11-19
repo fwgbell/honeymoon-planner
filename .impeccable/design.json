@@ -1,0 +1,500 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-19T15:10:38.913Z",
+  "title": "Design System: The Honeymoon",
+  "extensions": {
+    "colorMeta": {
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "cssVar": "--ink",
+        "tonalRamp": [
+          "#272726",
+          "#434341",
+          "#60605d",
+          "#7c7c79",
+          "#989895",
+          "#b4b4b1",
+          "#d4d4d3",
+          "#f2f2f2"
+        ]
+      },
+      "slate": {
+        "role": "neutral",
+        "displayName": "Slate",
+        "cssVar": "--slate",
+        "tonalRamp": [
+          "#242628",
+          "#3f4146",
+          "#595d64",
+          "#747981",
+          "#91959c",
+          "#aeb1b7",
+          "#d1d3d6",
+          "#f2f2f3"
+        ]
+      },
+      "olive": {
+        "role": "neutral",
+        "displayName": "Olive",
+        "cssVar": "--olive",
+        "tonalRamp": [
+          "#282824",
+          "#45453f",
+          "#63635a",
+          "#808075",
+          "#9b9b92",
+          "#b6b6af",
+          "#d6d6d2",
+          "#f3f3f2"
+        ]
+      },
+      "sand": {
+        "role": "neutral",
+        "displayName": "Sand",
+        "cssVar": "--sand",
+        "tonalRamp": [
+          "#2a2823",
+          "#48453c",
+          "#676356",
+          "#858070",
+          "#a09b8d",
+          "#b9b6ac",
+          "#d7d6d0",
+          "#f3f3f1"
+        ]
+      },
+      "stone": {
+        "role": "neutral",
+        "displayName": "Stone",
+        "cssVar": "--stone",
+        "tonalRamp": [
+          "#2a2722",
+          "#4a443b",
+          "#696054",
+          "#887d6d",
+          "#a2998b",
+          "#bbb4aa",
+          "#d8d5cf",
+          "#f4f3f1"
+        ]
+      },
+      "stone-light": {
+        "role": "neutral",
+        "displayName": "Stone Light",
+        "cssVar": "--stone-2",
+        "tonalRamp": [
+          "#2d2920",
+          "#4d4837",
+          "#6e664f",
+          "#8f8566",
+          "#a89f85",
+          "#bfb9a6",
+          "#dbd7cc",
+          "#f4f3f0"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Rule",
+        "cssVar": "--rule",
+        "tonalRamp": [
+          "#2b2822",
+          "#4a453a",
+          "#6a6253",
+          "#897f6c",
+          "#a39b8a",
+          "#bcb6a9",
+          "#d9d5ce",
+          "#f4f3f1"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "cssVar": "--paper",
+        "tonalRamp": [
+          "#262626",
+          "#424242",
+          "#5e5e5e",
+          "#7a7a7a",
+          "#969696",
+          "#b3b3b3",
+          "#d4d4d4",
+          "#f2f2f2"
+        ]
+      },
+      "charcoal": {
+        "role": "neutral",
+        "displayName": "Charcoal Field",
+        "cssVar": "--charcoal",
+        "tonalRamp": [
+          "#272725",
+          "#444441",
+          "#61615c",
+          "#7e7e77",
+          "#999994",
+          "#b5b5b0",
+          "#d5d5d2",
+          "#f3f3f2"
+        ]
+      },
+      "orange": {
+        "role": "primary",
+        "displayName": "Pelorus Orange",
+        "cssVar": "--orange",
+        "tonalRamp": [
+          "#4d2c00",
+          "#854c00",
+          "#bd6c00",
+          "#f58c00",
+          "#ffa62e",
+          "#ffbe66",
+          "#ffdaa8",
+          "#fff4e5"
+        ]
+      },
+      "orange-hover": {
+        "role": "primary",
+        "displayName": "Deep Orange",
+        "cssVar": "--orange-hover",
+        "tonalRamp": [
+          "#4a2a03",
+          "#804a05",
+          "#b66907",
+          "#ec8809",
+          "#f8a235",
+          "#fabb6b",
+          "#fcd8ab",
+          "#fef4e6"
+        ]
+      },
+      "orange-ink": {
+        "role": "primary",
+        "displayName": "Burnt Orange Ink",
+        "cssVar": "--orange-ink",
+        "tonalRamp": [
+          "#4d2900",
+          "#854700",
+          "#bd6500",
+          "#f58300",
+          "#ff9e2e",
+          "#ffb866",
+          "#ffd7a8",
+          "#fff3e5"
+        ]
+      },
+      "orange-wash": {
+        "role": "primary",
+        "displayName": "Orange Wash",
+        "cssVar": "--orange-wash",
+        "tonalRamp": [
+          "#472a06",
+          "#7b4a0a",
+          "#af690e",
+          "#e38812",
+          "#f0a23d",
+          "#f4bb71",
+          "#f9d8af",
+          "#fdf4e7"
+        ]
+      },
+      "ok": {
+        "role": "semantic",
+        "displayName": "Booked Green",
+        "cssVar": "--ok",
+        "tonalRamp": [
+          "#1a3324",
+          "#2d583f",
+          "#407d59",
+          "#52a274",
+          "#74b991",
+          "#9acbae",
+          "#c6e2d1",
+          "#eef6f2"
+        ]
+      },
+      "warn": {
+        "role": "semantic",
+        "displayName": "Warning Red",
+        "cssVar": "--warn",
+        "tonalRamp": [
+          "#3e170f",
+          "#6b2719",
+          "#993824",
+          "#c6482f",
+          "#d76b56",
+          "#e29383",
+          "#efc2b9",
+          "#faedea"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Band Title",
+        "purpose": "Photo band titles only; 40px on mobile and in compact list bands. Uppercase."
+      },
+      "headline": {
+        "displayName": "Stop Title",
+        "purpose": "Stop titles; 26-28px for mini stop heads, month names and the sheet title."
+      },
+      "title": {
+        "displayName": "Panel Title",
+        "purpose": "Panel titles such as Tonight. Uppercase."
+      },
+      "figure": {
+        "displayName": "Figure",
+        "purpose": "Times, prices and money totals in the display face with tabular figures."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "All reading text; purpose lines cap at 62ch."
+      },
+      "body-small": {
+        "displayName": "Small Body",
+        "purpose": "Meta lines, notes, hints (14-15px)."
+      },
+      "section-head": {
+        "displayName": "Section Head",
+        "purpose": "Section headings above a strong ink hairline. Uppercase."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Buttons (0.22em), tags, caption strips, sub-tabs, table headers, field labels. Uppercase, 11px floor."
+      },
+      "nav": {
+        "displayName": "Nav",
+        "purpose": "Desktop section nav; 600 when active. Uppercase."
+      }
+    },
+    "shadows": [
+      {
+        "name": "sheet",
+        "value": "0 24px 64px rgba(25, 25, 25, .28)",
+        "purpose": "The booking and edit sheet only; the one floating surface."
+      },
+      {
+        "name": "now-halo",
+        "value": "0 0 0 5px rgba(243, 139, 0, .25)",
+        "purpose": "Halo on the current stop's dot in a route."
+      },
+      {
+        "name": "today-inset",
+        "value": "inset 0 2px 0 var(--orange)",
+        "purpose": "Top rule marking today's row in the itinerary."
+      },
+      {
+        "name": "band-gradient",
+        "value": "linear-gradient(to top, rgba(25,25,25,.62), rgba(25,25,25,.08) 62%)",
+        "purpose": "Overlay on band photos so titles stay legible."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(.4, 0, .2, 1)",
+        "purpose": "Default easing for every state transition."
+      },
+      {
+        "name": "state",
+        "value": "150ms",
+        "purpose": "Button, chip, field and link colour/fill changes."
+      },
+      {
+        "name": "link-draw",
+        "value": "background-size .5s var(--ease)",
+        "purpose": "Orange underline drawing in on link hover."
+      },
+      {
+        "name": "band-zoom",
+        "value": "transform 2s ease-in-out, scale(1.05)",
+        "purpose": "Band photo drifting closer on hover."
+      },
+      {
+        "name": "sheet-in",
+        "value": "220ms var(--ease), translateY(14px) + fade",
+        "purpose": "Sheet entrance on desktop; 260ms from 40px below on mobile."
+      },
+      {
+        "name": "toast",
+        "value": "200ms var(--ease), translateY(16px) + fade",
+        "purpose": "Toast entrance."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "0.01ms",
+        "purpose": "All animation and transition durations collapse; band zoom is removed."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "compact",
+        "value": "380px"
+      },
+      {
+        "name": "mobile",
+        "value": "760px"
+      },
+      {
+        "name": "tablet",
+        "value": "960px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Button",
+      "kind": "button",
+      "refersTo": "button",
+      "description": "Neutral outline action; fills ink on hover.",
+      "html": "<button class=\"ds-btn\">Download backup</button>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.55em;min-height:44px;padding:0 22px;font-family:var(--f-label);font-weight:600;font-size:11px;letter-spacing:.22em;text-transform:uppercase;background:transparent;color:var(--ink);border:1px solid var(--ink);border-radius:0;cursor:pointer;transition:color .15s var(--ease),background-color .15s var(--ease),border-color .15s var(--ease);}.ds-btn:focus-visible{outline:2px solid var(--orange);outline-offset:2px;}.ds-btn:hover{background:var(--ink);color:#fff;}"
+    },
+    {
+      "name": "Orange Outline Button",
+      "kind": "button",
+      "refersTo": "button-orange",
+      "description": "The in-page action (Mark booked, Lock in). Fills orange with ink text on hover.",
+      "html": "<button class=\"ds-btn ds-btn-orange\">Mark booked</button>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.55em;min-height:44px;padding:0 22px;font-family:var(--f-label);font-weight:600;font-size:11px;letter-spacing:.22em;text-transform:uppercase;background:transparent;color:var(--ink);border:1px solid var(--ink);border-radius:0;cursor:pointer;transition:color .15s var(--ease),background-color .15s var(--ease),border-color .15s var(--ease);}.ds-btn:focus-visible{outline:2px solid var(--orange);outline-offset:2px;}.ds-btn-orange{border-color:var(--orange);color:var(--orange-ink);}.ds-btn-orange:hover{background:var(--orange);border-color:var(--orange);color:var(--ink);}"
+    },
+    {
+      "name": "Fill Button",
+      "kind": "button",
+      "refersTo": "button-fill",
+      "description": "Form submits and the cover gate. Orange fill, ink text.",
+      "html": "<button class=\"ds-btn ds-btn-fill\">Save</button>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.55em;min-height:44px;padding:0 22px;font-family:var(--f-label);font-weight:600;font-size:11px;letter-spacing:.22em;text-transform:uppercase;background:transparent;color:var(--ink);border:1px solid var(--ink);border-radius:0;cursor:pointer;transition:color .15s var(--ease),background-color .15s var(--ease),border-color .15s var(--ease);}.ds-btn:focus-visible{outline:2px solid var(--orange);outline-offset:2px;}.ds-btn-fill{background:var(--orange);border-color:var(--orange);color:var(--ink);}.ds-btn-fill:hover{background:var(--orange-hover);border-color:var(--orange-hover);}"
+    },
+    {
+      "name": "Quiet Button",
+      "kind": "button",
+      "refersTo": "button-quiet",
+      "description": "Secondary actions (Edit, Details). No border or fill.",
+      "html": "<button class=\"ds-btn ds-btn-quiet\">Edit</button>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.55em;min-height:44px;padding:0 22px;font-family:var(--f-label);font-weight:600;font-size:11px;letter-spacing:.22em;text-transform:uppercase;background:transparent;color:var(--ink);border:1px solid var(--ink);border-radius:0;cursor:pointer;transition:color .15s var(--ease),background-color .15s var(--ease),border-color .15s var(--ease);}.ds-btn:focus-visible{outline:2px solid var(--orange);outline-offset:2px;}.ds-btn-quiet{border-color:transparent;padding:0 10px;color:var(--olive);}.ds-btn-quiet:hover{color:var(--orange-ink);}"
+    },
+    {
+      "name": "Toggle Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Square toggle with a line icon; ink border when on, icon filled orange.",
+      "html": "<button class=\"ds-chip\" aria-pressed=\"false\"><svg viewBox=\"0 0 24 24\"><path d=\"m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z\"/></svg>Shortlist</button> <button class=\"ds-chip ds-on\" aria-pressed=\"true\"><svg viewBox=\"0 0 24 24\"><path d=\"m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z\"/></svg>Shortlisted</button>",
+      "css": ".ds-chip{display:inline-flex;align-items:center;gap:.45em;min-height:36px;padding:0 12px;cursor:pointer;font-family:var(--f-label);font-weight:600;font-size:11px;letter-spacing:.14em;text-transform:uppercase;border:1px solid var(--rule);background:#fff;color:var(--olive);border-radius:0;transition:color .15s var(--ease),border-color .15s var(--ease);}.ds-chip svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linejoin:round;}.ds-chip:hover{border-color:var(--orange);color:var(--orange-ink);}.ds-chip:focus-visible{outline:2px solid var(--orange);outline-offset:2px;}.ds-chip.ds-on{border-color:var(--ink);color:var(--ink);}.ds-chip.ds-on svg{fill:var(--orange);stroke:var(--orange-ink);}"
+    },
+    {
+      "name": "Status Tags",
+      "kind": "chip",
+      "refersTo": "label",
+      "description": "Unboxed tracked status labels with a dot or check.",
+      "html": "<span class=\"ds-tag ds-ok\"><svg viewBox=\"0 0 24 24\"><path d=\"m5 12.5 4.5 4.5L19 7.5\"/></svg>Booked</span> <span class=\"ds-tag ds-todo\">To book</span> <span class=\"ds-tag ds-warn\">Book by date</span> <span class=\"ds-tag\">Idea</span>",
+      "css": ".ds-tag{display:inline-flex;align-items:center;gap:.4em;margin-right:12px;font-family:var(--f-label);font-weight:600;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--olive);}.ds-tag svg{width:11px;height:11px;fill:none;stroke:var(--orange-ink);stroke-width:2.2;stroke-linecap:round;}.ds-ok{color:var(--ink);}.ds-todo{color:var(--orange-ink);}.ds-todo::before,.ds-warn::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--orange);}.ds-warn{color:var(--warn);}.ds-warn::before{background:var(--warn);}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Square hairline field; orange border and inset ring on focus.",
+      "html": "<label class=\"ds-field\"><span>Booking ref</span><input placeholder=\"ABC123\"></label>",
+      "css": ".ds-field{display:grid;gap:5px;max-width:320px;}.ds-field span{font-family:var(--f-label);font-weight:600;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--olive);}.ds-field input{min-height:44px;padding:9px 11px;border:1px solid var(--rule);border-radius:0;background:#fff;font-family:var(--f-body);font-size:16px;color:var(--ink);caret-color:var(--orange);transition:border-color .15s var(--ease);}.ds-field input:hover{border-color:var(--sand);}.ds-field input:focus{outline:none;border-color:var(--orange);box-shadow:inset 0 0 0 1px var(--orange);}"
+    },
+    {
+      "name": "Sub-tab Strip",
+      "kind": "nav",
+      "refersTo": "subtab-strip",
+      "description": "Full-width stone strip; the active tab is a white block.",
+      "html": "<nav class=\"ds-subtabs\"><button class=\"ds-on\">Overview</button><button>Day by day<span>12</span></button></nav>",
+      "css": ".ds-subtabs{display:flex;justify-content:center;background:var(--stone);}.ds-subtabs button{padding:17px 30px;background:transparent;border:0;cursor:pointer;font-family:var(--f-label);font-weight:600;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);transition:color .15s var(--ease);}.ds-subtabs button:hover{color:var(--orange-ink);}.ds-subtabs button:focus-visible{outline:2px solid var(--orange);outline-offset:-2px;}.ds-subtabs .ds-on{background:#fff;}.ds-subtabs span{color:var(--olive);font-weight:500;margin-left:.5em;}"
+    },
+    {
+      "name": "Photo Band (no photo)",
+      "kind": "custom",
+      "refersTo": "band-strip",
+      "description": "Signature section opening: charcoal field with the dashed orange route of stops, a condensed title and the ink caption strip.",
+      "html": "<section class=\"ds-band\"><div class=\"ds-media\"><div class=\"ds-route\"><span class=\"ds-past\"></span><span class=\"ds-now\"></span><span></span><span></span></div><h2>Country</h2></div><div class=\"ds-strip\">Day 3 of 14<span>·</span><b>Stop</b><span>·</span>2 nights left</div></section>",
+      "css": ".ds-band{background:var(--charcoal);color:#fff;}.ds-media{position:relative;height:230px;}.ds-media h2{position:absolute;left:0;right:0;bottom:30px;margin:0;font-family:var(--f-display);font-weight:400;font-size:52px;letter-spacing:.14em;line-height:1.02;text-align:center;text-transform:uppercase;}.ds-route{position:absolute;left:50%;top:30%;transform:translate(-50%,-50%);display:flex;justify-content:space-between;width:70%;}.ds-route::before{content:'';position:absolute;left:5px;right:5px;top:5px;border-top:1.5px dashed var(--orange);}.ds-route span{position:relative;width:11px;height:11px;border-radius:50%;background:var(--orange);}.ds-route .ds-past{background:#77756d;}.ds-route .ds-now{box-shadow:0 0 0 5px rgba(243,139,0,.28);}.ds-strip{background:var(--ink);color:var(--sand);padding:10px 24px;text-align:center;font-family:var(--f-label);font-weight:600;font-size:11px;letter-spacing:.16em;text-transform:uppercase;}.ds-strip b{color:#fff;font-weight:600;}.ds-strip span{color:#6f6d66;padding:0 .6em;}"
+    },
+    {
+      "name": "Panel",
+      "kind": "card",
+      "refersTo": "panel",
+      "description": "Stone-light panel with a 2px orange top rule, display title and tracked sub-line.",
+      "html": "<div class=\"ds-panel\"><h3>Hotel name</h3><p class=\"ds-sub\">Stop · Category</p><p>Check in from 3pm. Ref ABC123.</p></div>",
+      "css": ".ds-panel{background:var(--stone-2);border-top:2px solid var(--orange);padding:20px 22px 22px;max-width:420px;font-family:var(--f-body);color:var(--ink);}.ds-panel h3{margin:0;font-family:var(--f-display);font-weight:400;font-size:30px;letter-spacing:.1em;line-height:1.05;text-transform:uppercase;}.ds-sub{font-family:var(--f-label);font-weight:600;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--olive);margin:6px 0 14px;}"
+    },
+    {
+      "name": "Animated Link",
+      "kind": "custom",
+      "refersTo": "body",
+      "description": "Hairline underline at rest; orange line draws in over 0.5s on hover.",
+      "html": "<p class=\"ds-p\">See the <a class=\"ds-lnk\" href=\"#\">booking page</a> for details.</p>",
+      "css": ".ds-p{font-family:var(--f-body);font-size:16px;color:var(--ink);}.ds-lnk{color:inherit;text-decoration:none;padding-bottom:1px;background:linear-gradient(var(--orange),var(--orange)) 0 100%/0 1px no-repeat,linear-gradient(var(--rule),var(--rule)) 0 100%/100% 1px no-repeat;transition:background-size .5s var(--ease),color .15s var(--ease);}.ds-lnk:hover{background-size:100% 1px,100% 1px;color:var(--orange-ink);}.ds-lnk:focus-visible{outline:2px solid var(--orange);outline-offset:2px;}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Destination Page",
+    "overview": "Every section of the plan reads like a page from a travel house's destination guide: a full-width photo band carrying a condensed, widely tracked title, a near-black caption strip of small tracked facts beneath it, a stone sub-tab strip, and then the working content on a white ground. The visual lineage is the Pelorus travel site and its printed proposals, translated into an operate app for two people on phones. Stand-in faces (Bebas Neue for the house's condensed display face, Source Serif 4 for its serif body) carry that voice from free sources.\n\nThe system is calm, flat and editorial. Structure comes from hairlines, tracked uppercase labels and a single warm orange that marks rules, dots, focus and hover. There are no rounded corners and almost no shadow; depth is the photo band against white, and stone fields against white. Density is moderate: lists and tables are hairline-ruled rather than boxed, so a day's travel, stay and plans fit within one or two thumbs of scrolling.\n\nInteraction is quiet but alive, borrowed from the source site: links draw an orange underline in, buttons fill, band photos drift slowly closer on hover. The one deliberate departure from the source is contrast. Filled orange always carries ink text, never white, and orange used as text on white is the deeper burnt tone.",
+    "keyCharacteristics": [
+      "Photo band, dark caption strip, stone sub-tabs: the section opening, every time.",
+      "White ground, ink text, one orange accent.",
+      "Three voices: condensed display titles, tracked Montserrat labels (11px minimum), serif body.",
+      "Square corners and 1px hairlines everywhere.",
+      "Status is typographic: unboxed tracked labels with a dot or check, not pills."
+    ],
+    "rules": [
+      {
+        "name": "The Ink-On-Orange Rule",
+        "body": "Any surface filled with orange carries ink text. White on orange is not used, even though the source site does it.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Oranges Rule",
+        "body": "Orange (`orange`) is for fills, rules, dots and focus; orange as text on white is always `orange-ink`.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Accent Rule",
+        "body": "Orange is the only accent. Green and red are reserved for booked and warning states and never decorate.",
+        "section": "colors"
+      },
+      {
+        "name": "The 11px Floor Rule",
+        "body": "No text renders below 11px, including tab-bar labels and calendar meta on small phones.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tracked Caps Rule",
+        "body": "Every label, button and tab is Montserrat uppercase with positive tracking; the serif is never set in caps, and the display face is never set in sentence case.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Page Rule",
+        "body": "Cards, panels, buttons and inputs never cast shadows. A surface separates from the page with a hairline, a stone tone or an orange top rule.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Route Rule",
+        "body": "The dashed orange line of dots is the system's signature mark: it closes the cover, opens the home view and stands in for any band without a photo. It is always dashed, always orange, always dots of 10–13px.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do open every section with the photo band, the ink caption strip and the stone sub-tab strip, in that order.",
+      "Do put ink text on any orange fill, and use `orange-ink` for orange text on white.",
+      "Do set every label, button, tab and tag in Montserrat uppercase, tracked, at 11px or larger.",
+      "Do separate content with 1px hairlines and orange 2px top rules rather than boxes and shadows.",
+      "Do show times, prices and totals in the display face with tabular figures.",
+      "Do use the dashed orange route of dots wherever a band has no photo.",
+      "Do keep motion to the established set: 150ms state fills, 0.5s link draw, 2s band zoom, 220ms sheet entrance, all disabled under reduced motion."
+    ],
+    "donts": [
+      "Don't put white text on orange.",
+      "Don't round corners on any control, card, panel or sheet.",
+      "Don't box status tags into pills or badges; they stay unboxed tracked labels.",
+      "Don't add shadows to cards, panels, buttons or inputs; the sheet is the only floating surface.",
+      "Don't introduce a second accent colour; green and red are for booked and warning only.",
+      "Don't set body copy in the display face or the label face."
+    ]
+  }
+}
