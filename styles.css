@@ -640,8 +640,10 @@ details.items li { display: flex; justify-content: space-between; gap: 10px; bor
 .sheet .spend-form .conv { order: 9; }
 @media (min-width: 761px) {
   /* Day sheet: wide enough for the two-column day layout. */
-  .sheet.sheet-wide { width: min(1000px, calc(100vw - 48px)); }
+  .sheet.sheet-wide { width: min(1160px, calc(100vw - 48px)); }
   .sheet.sheet-wide .sheet-body { padding: 24px 32px 30px; }
+  /* Stack the day sections full width, as on mobile. */
+  .sheet .day-grid { grid-template-columns: 1fr; }
 }
 
 .toast {
